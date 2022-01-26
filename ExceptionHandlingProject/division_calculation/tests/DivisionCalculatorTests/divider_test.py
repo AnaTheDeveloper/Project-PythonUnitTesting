@@ -16,9 +16,10 @@ class TestDivider(unittest.TestCase):
         Divider.divide_two_numbers(self, 10, '2')
         self.assertRaises(TypeError)
 
-#TODO: Rewrite tests
+
     def test_dividing_by_null_will_fail(self):
-        Divider.divide_two_numbers(self, 10, None)
+        result = Divider.divide_two_numbers(self, 10, None)
+        self.assertEquals(result, None)
 
 
 
